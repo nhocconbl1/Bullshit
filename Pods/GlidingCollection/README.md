@@ -1,9 +1,9 @@
-[![header](/assets/header.png)](https://business.ramotion.com?utm_source=gthb&utm_medium=special&utm_campaign=gliding-collection-logo)
+[![header](/assets/header.png)](https://ramotion.com?utm_source=gthb&utm_medium=special&utm_campaign=gliding-collection-logo)
 
 [![Twitter](https://img.shields.io/badge/Twitter-@Ramotion-blue.svg?style=flat)](http://twitter.com/Ramotion)
 [![PodPlatform](https://img.shields.io/cocoapods/p/GlidingCollection.svg)](https://cocoapods.org/pods/GlidingCollection)
 [![PodVersion](https://img.shields.io/cocoapods/v/GlidingCollection.svg)](http://cocoapods.org/pods/GlidingCollection)
-[![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/GlidingCollection.svg)](https://cdn.rawgit.com/Ramotion/gliding-collection/master/docs/index.html)
+[![Documentation](https://cdn.rawgit.com/Ramotion/gliding-collection/master/docs/badge.svg)](https://cdn.rawgit.com/Ramotion/gliding-collection/master/docs/index.html)
 
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Ramotion/gliding-collection)
 [![Codebeat](https://codebeat.co/badges/6a009992-5bf2-4730-aa35-f3b20ce7693d)](https://codebeat.co/projects/github-com-ramotion-gliding-collection)
@@ -15,7 +15,7 @@
 This project is maintained by Ramotion, Inc.<br>
 We specialize in the designing and coding of custom UI for Mobile Apps and Websites.<br><br>**Looking for developers for your project?**
 
-<a href="https://business.ramotion.com?utm_source=gthb&utm_medium=special&utm_campaign=gliding-collection-contact-us/#Get_in_Touch" > <img src="https://github.com/Ramotion/navigation-stack/raw/master/contact_our_team@2x.png" width="150" height="30"></a>
+<a href="https://ramotion.com?utm_source=gthb&utm_medium=special&utm_campaign=gliding-collection-contact-us/#Get_in_Touch" > <img src="https://github.com/Ramotion/navigation-stack/raw/master/contact_our_team@2x.png" width="150" height="30"></a>
 
 [![animation](/assets/preview.gif)](https://dribbble.com/shots/3413329-iOS-Gliding-Collection-Open-Source)
 

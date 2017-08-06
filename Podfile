@@ -10,6 +10,8 @@ target 'BullShit' do
     pod 'Firebase/Storage'
     pod 'SnapKit', '~> 3.2.0'
     pod 'GlidingCollection'
+    pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
+    pod "RSLoadingView"
   # Pods for BullShit
 
   target 'BullShitTests' do
