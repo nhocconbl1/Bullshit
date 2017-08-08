@@ -22,13 +22,19 @@
 		8688B3771F0F44A000568B4F /* Salada+Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B3721F0F44A000568B4F /* Salada+Datasource.swift */; };
 		8688B3781F0F44A000568B4F /* Salada+Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B3731F0F44A000568B4F /* Salada+Relation.swift */; };
 		8688B37A1F0F4B5800568B4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8688B3791F0F4B5800568B4F /* GoogleService-Info.plist */; };
-		8688B37D1F0F685100568B4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B37C1F0F685100568B4F /* User.swift */; };
-		8688B37F1F0F722400568B4F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B37E1F0F722300568B4F /* Item.swift */; };
 		DC1F9E8070A3C6D2C62B27B8 /* Pods_BullShitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EF132881059267C10CA310 /* Pods_BullShitUITests.framework */; };
 		F4899B1E1F3565FE004414B6 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4899B1D1F3565FE004414B6 /* LoginSignUpViewController.swift */; };
 		F4899B221F35661B004414B6 /* AMInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4899B201F35661B004414B6 /* AMInputView.swift */; };
 		F4899B231F35661B004414B6 /* AMInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4899B211F35661B004414B6 /* AMInputView.xib */; };
 		F4899B251F356674004414B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4899B241F356674004414B6 /* Images.xcassets */; };
+		F4CA28391F39FCBD00ED6858 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA28331F39FCBD00ED6858 /* User.swift */; };
+		F4CA283A1F39FCBD00ED6858 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA28341F39FCBD00ED6858 /* Room.swift */; };
+		F4CA283B1F39FCBD00ED6858 /* GobalFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA28351F39FCBD00ED6858 /* GobalFile.swift */; };
+		F4CA283C1F39FCBD00ED6858 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA28361F39FCBD00ED6858 /* Item.swift */; };
+		F4CA283D1F39FCBD00ED6858 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA28371F39FCBD00ED6858 /* Video.swift */; };
+		F4CA283E1F39FCBD00ED6858 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA28381F39FCBD00ED6858 /* Comment.swift */; };
+		F4CA28411F39FCED00ED6858 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA283F1F39FCED00ED6858 /* ResetPasswordViewController.swift */; };
+		F4CA28421F39FCED00ED6858 /* SignUpNextNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA28401F39FCED00ED6858 /* SignUpNextNameViewController.swift */; };
 		F4CD59121F17A78500B1B562 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CD59111F17A78500B1B562 /* test.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,8 +78,6 @@
 		8688B3721F0F44A000568B4F /* Salada+Datasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Salada+Datasource.swift"; sourceTree = "<group>"; };
 		8688B3731F0F44A000568B4F /* Salada+Relation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Salada+Relation.swift"; sourceTree = "<group>"; };
 		8688B3791F0F4B5800568B4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8688B37C1F0F685100568B4F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		8688B37E1F0F722300568B4F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		94A72F7A912E981A3D9A75BA /* Pods_BullShit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BullShit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE515D3BFD29876BF1385C8B /* Pods-BullShit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BullShit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BullShit/Pods-BullShit.debug.xcconfig"; sourceTree = "<group>"; };
 		C2EF132881059267C10CA310 /* Pods_BullShitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BullShitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,14 @@
 		F4899B201F35661B004414B6 /* AMInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMInputView.swift; sourceTree = "<group>"; };
 		F4899B211F35661B004414B6 /* AMInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMInputView.xib; sourceTree = "<group>"; };
 		F4899B241F356674004414B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4CA28331F39FCBD00ED6858 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F4CA28341F39FCBD00ED6858 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		F4CA28351F39FCBD00ED6858 /* GobalFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GobalFile.swift; sourceTree = "<group>"; };
+		F4CA28361F39FCBD00ED6858 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F4CA28371F39FCBD00ED6858 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		F4CA28381F39FCBD00ED6858 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		F4CA283F1F39FCED00ED6858 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		F4CA28401F39FCED00ED6858 /* SignUpNextNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpNextNameViewController.swift; sourceTree = "<group>"; };
 		F4CD59111F17A78500B1B562 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,8 +221,12 @@
 		8688B37B1F0F684500568B4F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8688B37C1F0F685100568B4F /* User.swift */,
-				8688B37E1F0F722300568B4F /* Item.swift */,
+				F4CA28331F39FCBD00ED6858 /* User.swift */,
+				F4CA28341F39FCBD00ED6858 /* Room.swift */,
+				F4CA28351F39FCBD00ED6858 /* GobalFile.swift */,
+				F4CA28361F39FCBD00ED6858 /* Item.swift */,
+				F4CA28371F39FCBD00ED6858 /* Video.swift */,
+				F4CA28381F39FCBD00ED6858 /* Comment.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -228,6 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				F4899B1D1F3565FE004414B6 /* LoginSignUpViewController.swift */,
+				F4CA283F1F39FCED00ED6858 /* ResetPasswordViewController.swift */,
+				F4CA28401F39FCED00ED6858 /* SignUpNextNameViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -551,14 +569,20 @@
 				F4899B1E1F3565FE004414B6 /* LoginSignUpViewController.swift in Sources */,
 				8688B3751F0F44A000568B4F /* Referenceable.swift in Sources */,
 				F4899B221F35661B004414B6 /* AMInputView.swift in Sources */,
+				F4CA28411F39FCED00ED6858 /* ResetPasswordViewController.swift in Sources */,
+				F4CA28421F39FCED00ED6858 /* SignUpNextNameViewController.swift in Sources */,
 				8688B3761F0F44A000568B4F /* Salada.swift in Sources */,
 				8688B3771F0F44A000568B4F /* Salada+Datasource.swift in Sources */,
+				F4CA283D1F39FCBD00ED6858 /* Video.swift in Sources */,
 				8665ADE31F0F2D8100611B66 /* TestViewController.swift in Sources */,
 				F4CD59121F17A78500B1B562 /* test.swift in Sources */,
-				8688B37F1F0F722400568B4F /* Item.swift in Sources */,
+				F4CA283C1F39FCBD00ED6858 /* Item.swift in Sources */,
+				F4CA283B1F39FCBD00ED6858 /* GobalFile.swift in Sources */,
+				F4CA283E1F39FCBD00ED6858 /* Comment.swift in Sources */,
 				8665ADE11F0F2D8100611B66 /* AppDelegate.swift in Sources */,
+				F4CA28391F39FCBD00ED6858 /* User.swift in Sources */,
 				8688B3781F0F44A000568B4F /* Salada+Relation.swift in Sources */,
-				8688B37D1F0F685100568B4F /* User.swift in Sources */,
+				F4CA283A1F39FCBD00ED6858 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
