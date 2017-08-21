@@ -11,12 +11,6 @@ import CoreLocation
 import UIKit
 import Firebase
 
-@objc enum UserType: Int {
-    case email
-    case facebook
-    case google
-    case twitter
-}
 
 class User: Salada.Object {
     
@@ -27,12 +21,11 @@ class User: Salada.Object {
     }
     
     dynamic var username: String?
+    
     dynamic var email: String?
     dynamic var follows: Set<String> = []
-    dynamic var location: CLLocation?
+//    dynamic var location: CLLocation?
     dynamic var Profileurl: URL?
-    dynamic var ProfileFile: Salada.File?
-    dynamic var type: UserType = .email
     dynamic var knockcoin:Int = 0
     dynamic var password:String?
     dynamic var onroom:Bool = false
@@ -42,31 +35,7 @@ class User: Salada.Object {
         return ["profilePic"]
     }
     
-    override func encode(_ key: String, value: Any?) -> Any? {
-        if key == "location" {
-            if let location = self.location {
-                return ["latitude": location.coordinate.latitude, "longitude": location.coordinate.longitude]
-            }
-        } else if key == "type" {
-            return self.type.rawValue as AnyObject?
-        }
-        return nil
-    }
     
-    override func decode(_ key: String, value: Any?) -> Any? {
-        if key == "location" {
-            if let location: [String: Double] = value as? [String: Double] {
-                self.location = CLLocation(latitude: location["latitude"]!, longitude: location["longitude"]!)
-                return self.location
-            }
-        } else if key == "type" {
-            if let type: Int = value as? Int {
-                self.type = UserType(rawValue: type)!
-                return self.type
-            }
-        }
-        return nil
-    }
   
     class func registerUser(email: String, password: String, completion: @escaping (User?,Error?) -> Swift.Void) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -108,7 +77,6 @@ class User: Salada.Object {
         if withArray.count == 0 {
             return
         }
-    
         for i in 0..<end {
             User.info(forUserID: withArray[i], completion: {
                 user in
@@ -121,11 +89,8 @@ class User: Salada.Object {
                     return
                 }
                 return
-                
             })
-           
         }
-       
         return
        
     }
@@ -172,20 +137,6 @@ class User: Salada.Object {
             return
         }
     }
-   class func checkURL(user:User){
-        user.ProfileFile?.ref?.downloadURL(completion: {
-            url,error in
-            if error != nil {
-                return
-            }
-            if url != nil && url != user.Profileurl {
-                user.Profileurl = url
-                user.save()
-                return
-            }
-            
-        })
-    }
     class func InfoValue(forUserID: String, completion: @escaping (User) -> Swift.Void){
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
@@ -193,7 +144,7 @@ class User: Salada.Object {
             (user) in
             
             guard let user:User = user as? User else { return }
-            checkURL(user: user)
+           
             if user.Profileurl != nil {
                 
                 Util.loadImageUsingCacheWithUrlString(urlString: (user.Profileurl?.absoluteString)!, completion: {
@@ -205,24 +156,23 @@ class User: Salada.Object {
                     return
                     
                 })
-            }else if user.ProfileFile != nil {
-                user.ProfileFile?.dataWithMaxSize(1*10000*2000, completion: {
-                    (data,error) in
-                    user.profilePic = UIImage(data: data!)
-                    completion(user)
-                    return
-                    
-                })
             }else{
                 user.profilePic = UIImage.init(named: "profile pic")
                 completion(user)
                 return
             }
-            
-            
-            
         })
 
+    }
+    class func checkusername(forUserName: String,completion:@escaping (Bool)->Void) {
+        User.observeSingle(child: "username", equal: forUserName, eventType: .value, block: {
+            (users) in
+            if users.count != 0 {
+                completion(true)
+            }else{
+                completion(false)
+            }
+        })
     }
     class func info(forUserID: String, completion: @escaping (User) -> Swift.Void) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
@@ -231,8 +181,7 @@ class User: Salada.Object {
         (user) in
             
             guard let user:User = user as? User else { return }
-            checkURL(user: user)
-            if user.Profileurl != nil {
+                if user.Profileurl != nil {
                 
                 Util.loadImageUsingCacheWithUrlString(urlString: (user.Profileurl?.absoluteString)!, completion: {
                     image in
@@ -243,23 +192,12 @@ class User: Salada.Object {
                     return
                 
                 })
-            }else if user.ProfileFile != nil {
-                user.ProfileFile?.dataWithMaxSize(1*10000*2000, completion: {
-                    (data,error) in
-                    user.profilePic = UIImage(data: data!)
-                    
-                    completion(user)
-                    return
-                    
-                })
             }else{
                 user.profilePic = UIImage.init(named: "profile pic")
                 completion(user)
                 return
             }
-            
-            
-           
+
         })
     }
 
